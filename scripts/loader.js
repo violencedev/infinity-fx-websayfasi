@@ -62,4 +62,5 @@ document.body.onload = () => {
     fadeOut(document.querySelector('.loader-wrapper'))
     document.querySelector('.loader-wrapper').remove()
     fadeIn(document.querySelector('main'))
+    document.querySelector('html').style.overflow = 'visible'
 }
