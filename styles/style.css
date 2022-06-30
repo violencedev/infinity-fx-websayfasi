@@ -3,6 +3,10 @@ body {
     font-size: 1vw;
 } 
 
+html {
+    overflow: hidden;
+}
+
 .logo-container {
     height: calc(100vh - 64px);
 }
