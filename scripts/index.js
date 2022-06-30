@@ -6,7 +6,7 @@ let canBeClosed = false;
 
 subProjects.forEach(subProject => {
     subProject.addEventListener('click', (_e) => {
-        iFrame.setAttribute('src', subProject.getAttribute('url'))
+        iFrame.setAttribute('src', `https://player.vimeo.com/video/${subProject.getAttribute('reference')}`)
         popUp.classList.add('visible')
         document.querySelector('html').style.overflow = 'hidden'
     });
