@@ -1,0 +1,24 @@
+const subProjects = document.querySelectorAll('div.sub-project'),
+popUp = document.querySelector('div#pop-up'),
+iFrame = popUp.querySelector('iframe');
+
+let canBeClosed = false;
+
+subProjects.forEach(subProject => {
+    subProject.addEventListener('click', (_e) => {
+        iFrame.setAttribute('src', subProject.getAttribute('url'))
+        popUp.classList.add('visible')
+        document.querySelector('html').style.overflow = 'hidden'
+    });
+});
+
+document.body.addEventListener('click', (event) => {
+    if (popUp.classList.contains('visible') && !(iFrame.contains(event.target)) && canBeClosed) {
+        popUp.classList.remove('visible')
+        canBeClosed = false;
+        document.querySelector('html').style.overflow = 'visible'
+        iFrame.setAttribute('src', '')
+    } else if(popUp.classList.contains('visible') && !(iFrame.contains(event.target))){
+        canBeClosed = true;
+    }
+});
