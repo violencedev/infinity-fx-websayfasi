@@ -55,7 +55,7 @@
         </div>
     
         <section id="about-us" class="about-us-container d-flex justify-content-center align-items-center mt-2">
-            <article>        
+            <article class="article">        
                 <h3 class="h3 text-decoration-underline">About Us</h3>
                 INFINITY FX is a pioneering multi-disciplinary new media art studio working with emerging technology to create magical experiences.<br>
                 <br>
@@ -203,5 +203,30 @@
     
     <script src="./scripts/loader.js"></script>
     <script src="./scripts/index.js"></script>
+    <script src="https://kit.fontawesome.com/2bdb165e59.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+        ScrollReveal().reveal(".astronot",
+        {
+            duration: 1000,
+            origin: "left",
+            distance: "60px"
+        })
+
+        ScrollReveal().reveal(".about-us-logosu",
+        {
+            delay: 500,
+            duration: 2000,
+            origin: "left",
+            distance: "60px"
+        })
+
+        ScrollReveal().reveal(".sub-project",
+        {
+            duration: 2000,
+            origin: "bottom",
+            distance: "60px"
+        })
+    </script>
 </body>
 </html>
