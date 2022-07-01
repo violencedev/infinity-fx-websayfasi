@@ -20,7 +20,6 @@ html {
 .about-us-logosu {
     height: 40vh;
     width: auto;
-    transform: scaleX(-1);
 }
 
 .about-us-container {
