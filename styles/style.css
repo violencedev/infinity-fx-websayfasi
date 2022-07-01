@@ -39,7 +39,7 @@ a:hover {
     opacity: 0.8;
 }
 
-img.cover-image {
+.cover-image {
     width: 30vw;
     height: 30vh;
     display: block;
