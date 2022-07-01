@@ -1,45 +1,66 @@
-body {
-    font-size: 1vw;
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@600&display=swap');
+
+body
+{
     background-image: url(../components/bg2.gif);
     background-attachment: fixed;
 } 
 
-html {
+
+html
+{
     overflow: hidden;
 }
 
-.logo-container {
+html, body 
+{
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.logo-container
+{
     height: calc(100vh - 64px);
 }
 
-.site-logo {
+li.nav-item a {
+    font-size: 1.25rem;
+}
+
+.site-logo
+{
     width: 30vw;
     height: auto;
 }
 
-.about-us-logosu {
+.about-us-logosu
+{
     height: 40vh;
     width: auto;
 }
 
-.about-us-container {
-    width: 60%;
+.about-us-container
+{
+    width: 65%;
     margin: auto;
+    margin-bottom: 10vh;
     gap: 10%;
 }
 
-a {
+a
+{
     color: white;
     text-decoration: none;
     transition: 0.3s ease-in opacity;
 }
 
-a:hover {
+a:hover
+{
     color: white;
     opacity: 0.8;
 }
 
-.cover-image {
+.cover-image
+{
     width: 30vw;
     height: 30vh;
     display: block;
@@ -47,12 +68,15 @@ a:hover {
     object-fit: cover;
     object-position: center;
 }
-div.sub-project {
+
+div.sub-project
+{
     position: relative;
     overflow: hidden;
 }
 
-div.project-details {
+div.project-details
+{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,31 +93,38 @@ div.project-details {
     cursor:pointer;
 }
 
-div.project-details, .cover-image {
+div.project-details, .cover-image
+{
     transition: 200ms all ease-in-out;
 }
 
-div.sub-project:hover > .project-details.fade {
+div.sub-project:hover > .project-details.fade
+{
     opacity:1
 }
 
-div.sub-project:hover > .cover-image.blur {
+div.sub-project:hover > .cover-image.blur
+{
     filter: blur(5px);
 }
 
-div.sub-project:hover > .cover-image.zoom {
+div.sub-project:hover > .cover-image.zoom
+{
     transform: scale(1.1);
 }
 
-div.sub-project > .project-details.fade {
+div.sub-project > .project-details.fade
+{
     opacity: 0;
 }
 
-iframe {
+iframe
+{
     display: none;
 }
 
-div#pop-up.visible iframe {
+div#pop-up.visible iframe
+{
     display: block;
     position: fixed;
     top: 50%;
@@ -104,107 +135,126 @@ div#pop-up.visible iframe {
     height: 50vh;
 }
 
-div#pop-up.visible + main {
+div#pop-up.visible + main
+{
     filter: blur(5px);
 }
 
-footer div {
+footer div
+{
     opacity: 0.68;
     font-size: 0.8em;
 }
 
-.footer-astronot-logosu {
+.footer-astronot-logosu
+{
     width: 10vw;
     height: auto;
 }
 
-.activated + main {
+.activated + main
+{
     display: none;
     overflow: hidden;
     opacity: 0;
 }
 
-
-.activated {
+.activated
+{
     transition: opacity 200ms ease-in-out;
 }
 
 
+@media only screen and (min-device-width : 0px) and (max-device-width : 1024px)
+{
 
-@media only screen and (min-device-width : 0px) and (max-device-width : 1024px) {
-
-    body {
+    body
+    {
         font-size: 2vh;
     }
-    .site-logo {
+    
+    .site-logo
+    {
         height: 20vh;
         width: auto;
     }
 
-    img.cover-image {
+    img.cover-image
+    {
         width: 40vw;
         height: auto;
     }
 
-    .sub-project {
+    .sub-project
+    {
         margin-bottom: 2vh;
     }
 
-    .about-us-logosu {
+    .about-us-logosu
+    {
         display: none;
     }
 
     
-    .footer-astronot-logosu {
+    .footer-astronot-logosu
+    {
         height: 10vh;
         width: auto;
     }
 
-    div.project-details {
+    div.project-details
+    {
         font-size: 1.5vh;
     }
 
 
 }
 
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    body {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+{
+    body
+    {
         font-size: 2vh;
     }
 
-    .about-us-logosu {
+    .about-us-logosu
+    {
         display: block;
     }
 
 
-    #about-us {
+    #about-us
+    {
         flex-direction: column;
         gap: 5vh;
     }
 
-    #about-us h3 {
-        font-size: 2.5vh;
-    }
 }
 
-@media only screen and (min-device-width : 0px) and (max-device-width : 1024px) and (orientation: landscape) {
-    body {
+@media only screen and (min-device-width : 0px) and (max-device-width : 1024px) and (orientation: landscape)
+{
+    body
+    {
         font-size: 2vw;
     }
 
-    .footer-astronot-logosu {
+    .footer-astronot-logosu
+    {
         width: 12vw;
         height: auto;
     }
 
-    .site-logo {
+    .site-logo
+    {
         width: 30vw;
         height: auto;
     }
 }
 
-@media only screen and (min-device-width : 0px) and (max-device-width : 1024px) and (orientation: portrait) {
-    body {
+@media only screen and (min-device-width : 0px) and (max-device-width : 1024px) and (orientation: portrait)
+{
+    body
+    {
         font-size: 2vh;
     }
 }

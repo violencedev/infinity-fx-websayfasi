@@ -10,6 +10,8 @@ subProjects.forEach(subProject => {
         popUp.classList.add('visible')
         document.querySelector('html').style.overflow = 'hidden'
     });
+    subProject.classList.add('reveal')
+    subProject.classList.add('fade-bottom')
 });
 
 document.body.addEventListener('click', (event) => {
