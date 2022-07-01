@@ -55,9 +55,9 @@
         </div>
     
         <section id="about-us" class="about-us-container d-flex justify-content-center align-items-center mt-2">
-            <article class="article">        
+            <article>        
                 <h3 class="h3 text-decoration-underline">About Us</h3>
-                INFINITY FX is a pioneering multi-disciplinary new media art studio
+                <p class="article">INFINITY FX is a pioneering multi-disciplinary new media art studio
                 working with emerging technology to create magical artistic
                 experiences.
                 <br>
@@ -87,7 +87,7 @@
                 <br>
                 <br>
                 Our passionate team values creativity, joy, speed, curiosity, an
-                appetite for success, and eagerness to learn.
+                appetite for success, and eagerness to learn.</p>
             </article>
             <img src="./components/images/Beyaz_Astronot_Logo_scaled.svg" class="about-us-logosu" alt="Astronot Logosu">
         </section>
@@ -229,20 +229,24 @@
     <script src="https://kit.fontawesome.com/2bdb165e59.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script>
-        ScrollReveal().reveal('.about-us-logosu',
+        ScrollReveal().reveal(".about-us-logosu",
         {
+            duration: 1000,
             origin: "left",
             distance: "60px"
         })
 
-        ScrollReveal().reveal('.article',
+        ScrollReveal().reveal(".article",
         {
+            delay: 500,
+            duration: 2000,
             origin: "left",
             distance: "60px"
         })
 
-        ScrollReveal().reveal('.projects-container',
+        ScrollReveal().reveal(".sub-project",
         {
+            duration: 2000,
             origin: "bottom",
             distance: "60px"
         })
