@@ -70,7 +70,7 @@ div.project-details {
     cursor:pointer;
 }
 
-div.project-details, img.cover-image {
+div.project-details, .cover-image {
     transition: 200ms all ease-in-out;
 }
 
