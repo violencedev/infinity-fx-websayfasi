@@ -1,6 +1,7 @@
 body {
     font-size: 1vw;
     background-image: url(../components/bg2.gif);
+    background-attachment: fixed;
 } 
 
 html {
